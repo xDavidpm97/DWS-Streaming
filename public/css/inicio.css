@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    background-image: url('fondo.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 18px; /* Tamaño de fuente más adecuado para pantallas */
+    font-family: 'Arial', sans-serif; /* Tipografía más moderna */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Mayor separación desde la parte superior */
+    align-items: center;
+    min-height: 90vh;
+    gap: 30px; /* Espaciado entre los elementos */
+    color: #ffffff;
+}
+
+h1 {
+    color: #ffffff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Sombra más suave y difusa */
+    font-size: 48px; /* Tamaño mayor para un impacto visual */
+    margin: 0;
+    text-align: center;
+}
+
+.bloque_inicio {
+    width: 650px; /* Ancho más amplio para contenido */
+    height: 300px; /* Altura ajustada */
+    padding: 25px;
+    margin: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Borde más claro y elegante */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro con transparencia */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px; /* Bordes más redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra más suave */
+    color: #ffffff;
+}
+
+.bloque_inicio:hover {
+    transform: translateY(-5px); /* Pequeño efecto de elevación al pasar el cursor */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); /* Sombra más intensa */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px; /* Espaciado entre los elementos del menú */
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo claro para los enlaces */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #1e90ff; /* Azul más llamativo al pasar el cursor */
+    color: #ffffff;
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+.btn-logout {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-logout:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(30, 144, 255, 0.6);
+}
+/* Estilo común para todos los botones */
+.btn {
+    background-color: #007bff; /* Fondo azul */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin bordes */
+    padding: 10px 20px; /* Espaciado */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animaciones */
+    text-decoration: none; /* Eliminar subrayado */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+.btn:active {
+    background-color: #003d82; /* Color más oscuro al hacer clic */
+    transform: scale(0.95); /* Efecto de reducción */
+}
+
+/* Contenedor del formulario de login */
+#login {
+    width: 400px; /* Ancho ajustado para centrar mejor */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px 30px; /* Espaciado interno */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para darle profundidad */
+    color: #ffffff; /* Texto blanco */
+    text-align: center; /* Centrar el contenido */
+    margin: 10px; /* Centrar el recuadro */
+}
+
+/* Estilo del encabezado del formulario */
+#login h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Sombra suave */
+}
+
+/* Estilo de los labels */
+#login label {
+    color: #ffffff;
+    font-size: 16px;
+    display: block; /* Hacer que los labels ocupen toda la línea */
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Estilo de los inputs */
+#login input {
+    width: 100%; /* Ajustar el ancho al contenedor */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#login input:focus {
+    border-color: #1e90ff; /* Cambiar color del borde al enfocar */
+}
+
+/* Botón de login */
+#login button {
+    background-color: #1e90ff; /* Fondo azul */
+    color: #ffffff; /* Texto blanco */
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#login button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+#login button:active {
+    background-color: #003d82; /* Azul más oscuro al hacer clic */
+    transform: scale(0.95); /* Efecto de reducción */
+}
